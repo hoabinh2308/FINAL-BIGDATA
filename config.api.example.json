@@ -1,0 +1,27 @@
+{
+  "name": "ten_san",
+  "base_url": "https://example.com",
+  "mode": "api",
+  "delay": [1.5, 3.5],
+  "respect_robots": true,
+  "api": {
+    "url": "https://example.com/api/products",
+    "method": "GET",
+    "params": {"category": "laptop", "page": "{page}", "limit": 40},
+    "start_page": 1,
+    "max_pages": 50,
+    "items_path": "data.products",
+    "url_prefix": "https://example.com/",
+    "fields": {
+      "product_id": "id",
+      "name": "name",
+      "brand": "brand.name",
+      "price": "prices.sale",
+      "original_price": "prices.list",
+      "rating": "rating.avg",
+      "review_count": "rating.count",
+      "image": "images.0",
+      "url": "slug"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "cellphones",
+  "base_url": "https://cellphones.com.vn",
+  "mode": "sitemap_jsonld",
+  "sitemap_urls": [],
+  "sitemap_include": "product",
+  "url_include": "\\.html$",
+  "url_keywords": ["laptop", "macbook"],
+  "delay": [1.5, 3.5],
+  "retries": 3,
+  "respect_robots": true,
+  "output_dir": "data"
+}
